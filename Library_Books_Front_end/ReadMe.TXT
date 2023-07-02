@@ -1,3 +1,6 @@
+Deployment URL: https://64a1941ba3ef6d604b7df34f--soft-lily-28a431.netlify.app/
+
+
 Front-end (Client) Documentation
 This is the front-end (client-side) documentation for the application. This application is built using React for the user interface.
 
