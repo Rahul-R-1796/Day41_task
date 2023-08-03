@@ -12,7 +12,7 @@ const Books = () => {
 
   const fetchBooks = async () => {
     try {
-      const response = await axios.get('http://localhost:3001/books');
+      const response = await axios.get('https://library-books-back-end.onrender.com/books');
       setBooks(response.data);
     } catch (error) {
       console.error(error);
@@ -21,7 +21,7 @@ const Books = () => {
 
   const createBook = async () => {
     try {
-      await axios.post('http://localhost:3001/books', newBook);
+      await axios.post('https://library-books-back-end.onrender.com/books', newBook);
       setNewBook({ title: '', author: '', genre: '' });
       fetchBooks();
     } catch (error) {
@@ -31,7 +31,7 @@ const Books = () => {
 
   const deleteBook = async (id) => {
     try {
-      await axios.delete(`http://localhost:3001/books/${id}`);
+      await axios.delete(`https://library-books-back-end.onrender.com/books/${id}`);
       fetchBooks();
     } catch (error) {
       console.error(error);
@@ -40,7 +40,7 @@ const Books = () => {
 
   const editBook = async (id) => {
     try {
-      const response = await axios.get(`http://localhost:3001/books/${id}`);
+      const response = await axios.get(`https://library-books-back-end.onrender.com/books/${id}`);
       setSelectedBook(response.data);
     } catch (error) {
       console.error(error);
@@ -49,7 +49,7 @@ const Books = () => {
 
   const updateBook = async () => {
     try {
-      await axios.put(`http://localhost:3001/books/${selectedBook._id}`, selectedBook);
+      await axios.put(`https://library-books-back-end.onrender.com/books/${selectedBook._id}`, selectedBook);
       setSelectedBook(null);
       fetchBooks();
     } catch (error) {
