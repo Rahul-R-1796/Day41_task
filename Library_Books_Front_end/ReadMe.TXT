@@ -1,4 +1,15 @@
-# Please Use This Deployment URL: https://day-41-task-zw6a.onrender.com/
+# CRM_Back_end  Deployment Please Use This Deployment URL: https://day-41-task-zw6a.onrender.com/
+
+Deployment URL : https://hackathon2-backend.vercel.app
+ 
+Install Node.js on your machine if you haven't already.
+Create a new directory for your project and navigate to it in your terminal.
+
+Run the following command to initialize a new Node.js project:
+npm init -y
+
+Install the Express framework by running the following command:
+npm install express
 
 Deployment URL: https://64a1941ba3ef6d604b7df34f--soft-lily-28a431.netlify.app/
 
